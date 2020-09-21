@@ -51,8 +51,6 @@ body{
 img {
   vertical-align: middle; 
 }
-
-
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -60,8 +58,6 @@ img {
   margin: auto;
   border: 1px solid lightgrey;
 }
-
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -71,7 +67,6 @@ img {
   width: 100%;
   text-align: center;
 }
-
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -79,7 +74,6 @@ img {
   position: absolute;
   top: 0;
 }
-
 .dots{
   position: absolute;
   text-align: right;
@@ -95,11 +89,9 @@ img {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active {
   background-color: #717171;
 }
-
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
@@ -112,7 +104,6 @@ img {
 .content{
   display: flex;
 }
-
 .article-container{
   width: 74%;
   border: 1px solid lightgrey;
@@ -121,7 +112,6 @@ img {
 }
 .article-text{
   color:#00903e; 
-
   margin-left: 28px;
   margin-right: 28px;
   font-size: 16px;
@@ -143,9 +133,7 @@ img {
   color:#6f6f6f;
 }
 hr{
-  
   border: 1px solid green;
-  
 }
 h4, h5{
   color: #00903e;
@@ -348,12 +336,10 @@ a:link{
 li{
   display: block;
 }
-
 .modal-cursor{
   cursor: pointer;
   transition: 0.3s;
 }
-
 .modal-cursor:hover{
   opacity: 0.7;
 }
@@ -370,8 +356,6 @@ li{
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.9); 
 }
-
-/* Modal Content */
 .modal-content {
   position: relative;
   margin: auto;
@@ -380,8 +364,6 @@ li{
   height: 40%;
   max-width: 1200px;
 }
-
-/* The Close Button */
 .close {
   color: white;
   position: absolute;
@@ -397,16 +379,12 @@ li{
   text-decoration: none;
   cursor: pointer;
 }
-
 .mySlide {
   display: none;
 }
-
 .cursor {
   cursor: pointer;
 }
-
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -423,14 +401,10 @@ li{
   user-select: none;
   -webkit-user-select: none;
 }
-
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -459,7 +433,6 @@ li{
   font-size: 35px;
   font-weight: bold;
 }
-
 .closeVideo:hover,
 .closeVideo:focus {
   color: #999;
@@ -490,14 +463,10 @@ li{
   user-select: none;
   -webkit-user-select: none;
 }
-
-/* Position the "next button" to the right */
 .nextVideo {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
 .previous:hover,
 .nextVideo:hover {
   background-color: rgba(0, 0, 0, 0.8);

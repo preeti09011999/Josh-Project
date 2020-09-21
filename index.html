@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontend Developer Assignment</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 <body>
-  <!-- navbar -->
     <div class="navbar">
         <div class="logoimg">
             <img src="./images/logo.png" class="logo-img">
@@ -22,7 +22,6 @@
             </ul>
         </div>
     </div>
-  <!-- slides  -->
     <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -83,7 +82,6 @@
         </div>
     </div>
         <br>
-<!-- article -->
     <div class="article">
       <div class="left-article"></div>
       <div class="article-container">
@@ -139,7 +137,6 @@
         </div>
       </div>
     </div>
-    <!-- customers -->
     <br> <br>
     <div class="section">
       <div class="left-article"></div>
@@ -202,7 +199,6 @@
         
       </div>
     </div>
-    <!-- media resources -->
     <div class="resources">
       <div class="left-article"></div>
       <div class="media-res">
@@ -254,7 +250,6 @@
 
     </div>
     <br><br>
-    <!-- footer -->
     <div class="footer">
       <div class="left-article"></div>
       <div class="footer-nav">
@@ -271,7 +266,29 @@
         <a href="#" style="color: white;">@2011 Company Name. All rights reserved.</a>
       </div>
     </div>
-    <!-- implementation of modal image  -->
+    <div id="vModal" class="videoModal">
+      <span class="closeVideo cursor" onclick="closeVideoModal();stopVideoModal()">&times;</span>
+      <div class="video-content">
+        <div class="videoSlide" id="yt-player">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?enablejsapi=1&mute=1&html5=1" allowscriptaccess="always" width="420" height="345" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="videoSlide" id="yt-player">
+          <iframe  src="https://www.youtube.com/embed/FA-4kMedp44?enablejsapi=1&mute=1&html5=1" allowscriptaccess="always" width="420" height="345" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="videoSlide" id="yt-player">
+          <iframe  src="https://www.youtube.com/embed/VNGUdObDoLk?enablejsapi=1&mute=1&html5=1" allowscriptaccess="always" width="420" height="345" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="videoSlide" id="yt-player">
+          <iframe  src="https://www.youtube.com/embed/kOEDG3j1bjs?enablejsapi=1&mute=1&html5=1" allowscriptaccess="always" width="420" height="345" allowfullscreen>
+          </iframe>
+        </div>
+        <a class="previous" onclick="stopVideoModal();addSlide(-1)">&#10094;</a>
+        <a class="nextVideo" onclick="stopVideoModal();addSlide(1)">&#10095;</a>
+      </div>
+    </div>
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
@@ -283,7 +300,6 @@
         <div class="mySlide">
           <img src="./images/full2.jpg" style="width:100%;">
         </div>
-    
         <div class="mySlide">
           <img src="./images/full3.jpg" style="width:100%;">
         </div>
@@ -295,31 +311,7 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <!-- implementation of modal video -->
-    <div id="vModal" class="videoModal">
-      <span class="closeVideo cursor" onclick="closeVideoModal()">&times;</span>
-      <div class="video-content">
-        <div class="videoSlide">
-          <iframe  src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" width="420" height="345">
-          </iframe>
-        </div>
-        <div class="videoSlide">
-          <iframe  src="https://www.youtube.com/embed/JkaxUblCGz0?autoplay=1&mute=1" width="420" height="345">
-          </iframe>
-        </div>
-        <div class="videoSlide">
-          <iframe  src="https://www.youtube.com/embed/hkIqPkGuCvg?autoplay=1&mute=1" width="420" height="345">
-          </iframe>
-        </div>
-        <div class="videoSlide">
-          <iframe  src="https://www.youtube.com/embed/EFkRxl3sRzA?autoplay=1&mute=1" width="420" height="345">
-          </iframe>
-        </div>
-        <a class="previous" onclick="addSlide(-1)">&#10094;</a>
-        <a class="nextVideo" onclick="addSlide(1)">&#10095;</a>
-      </div>
-    </div>
     <script src="main.js"></script>
-    
 </body>
 </html>
+

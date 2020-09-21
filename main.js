@@ -1,7 +1,5 @@
-// slideshow
 var slideIndex = 0;
 showSlides();
-
 
 function showSlides() {
   var i;
@@ -20,7 +18,6 @@ function showSlides() {
   setTimeout(showSlides, 4000);
 }
 
-// photo popup --------------------------------------------------------
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
@@ -52,7 +49,6 @@ function showSlide(n) {
 }
 
 function openModalVideo(){
-  console.log("opened")
   document.getElementById("vModal").style.display = "block";
 }
 
@@ -63,10 +59,12 @@ var sIdx = 1;
 function addSlide(n) {
   showVideoSlide(sIdx += n);
 }
+
 function currentVideoSlide(n){
   showVideoSlide(sIdx = n);
 }
-function  showVideoSlide(n) {
+
+function showVideoSlide(n) {
   var i;
   var vslide = document.getElementsByClassName("videoSlide");
   if (n > vslide.length) {sIdx = 1}
@@ -76,4 +74,11 @@ function  showVideoSlide(n) {
   }
  
   vslide[sIdx-1].style.display = "block";
+}
+
+function stopVideoModal() { 
+  for(let i=0;i<4;i++){
+    var iframe = document.getElementsByTagName("iframe")[i].contentWindow;
+    iframe.postMessage('{"event":"command","func":"'+'stopVideo'+   '","args":""}', '*');
+  }
 }
